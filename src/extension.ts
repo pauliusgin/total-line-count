@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 
-const ENABLED_KEY = "line-count.enabled";
-const CONTEXT_KEY = "lineCount.enabled";
+const ENABLED_KEY = "total-line-count.enabled";
+const CONTEXT_KEY = "totalLineCount.enabled";
 
 let statusBarItem: vscode.StatusBarItem;
 let enabled = true;
@@ -47,17 +47,20 @@ export function activate(context: vscode.ExtensionContext) {
 
   statusBarItem.command = {
     title: "Disable Line Count",
-    command: "line-count.disable",
+    command: "total-line-count.disable",
     arguments: [{ confirm: true }],
   };
   context.subscriptions.push(statusBarItem);
 
-  const enable = vscode.commands.registerCommand("line-count.enable", () => {
-    return setEnabled(context, true);
-  });
+  const enable = vscode.commands.registerCommand(
+    "total-line-count.enable",
+    () => {
+      return setEnabled(context, true);
+    },
+  );
 
   const disable = vscode.commands.registerCommand(
-    "line-count.disable",
+    "total-line-count.disable",
     async (arg?: { confirm?: boolean }) => {
       if (arg?.confirm) {
         const choice = await vscode.window.showWarningMessage(
@@ -73,9 +76,12 @@ export function activate(context: vscode.ExtensionContext) {
     },
   );
 
-  const toggle = vscode.commands.registerCommand("line-count.toggle", () => {
-    return setEnabled(context, !enabled);
-  });
+  const toggle = vscode.commands.registerCommand(
+    "total-line-count.toggle",
+    () => {
+      return setEnabled(context, !enabled);
+    },
+  );
 
   context.subscriptions.push(
     enable,

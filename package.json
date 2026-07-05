@@ -1,13 +1,13 @@
 {
-  "name": "line-count",
-  "displayName": "Line Count",
+  "name": "total-line-count",
+  "displayName": "Total Line Count",
   "description": "Show active file line count and cursor location in the status bar.",
   "publisher": "pauliusgin",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pauliusgin/line-count"
+    "url": "https://github.com/pauliusgin/total-line-count"
   },
   "engines": {
     "vscode": "^1.125.0"
@@ -22,30 +22,30 @@
   "contributes": {
     "commands": [
       {
-        "command": "line-count.enable",
-        "title": "Line Count: Enable"
+        "command": "total-line-count.enable",
+        "title": "Total Line Count: Enable"
       },
       {
-        "command": "line-count.disable",
-        "title": "Line Count: Disable"
+        "command": "total-line-count.disable",
+        "title": "Total Line Count: Disable"
       },
       {
-        "command": "line-count.toggle",
-        "title": "Line Count: Toggle"
+        "command": "total-line-count.toggle",
+        "title": "Total Line Count: Toggle"
       }
     ],
     "menus": {
       "commandPalette": [
         {
-          "command": "line-count.enable",
-          "when": "!lineCount.enabled"
+          "command": "total-line-count.enable",
+          "when": "!totalLineCount.enabled"
         },
         {
-          "command": "line-count.disable",
-          "when": "lineCount.enabled"
+          "command": "total-line-count.disable",
+          "when": "totalLineCount.enabled"
         },
         {
-          "command": "line-count.toggle",
+          "command": "total-line-count.toggle",
           "when": "false"
         }
       ]

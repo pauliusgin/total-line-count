@@ -1,4 +1,4 @@
-# Line Count
+# Total Line Count
 
 Show the active file's total line count next to your cursor position in the status bar.
 
@@ -17,7 +17,7 @@ Ln 25, Col 66, Total 100
 - **Runs on startup** — active as soon as VS Code opens or reloads.
 - **Enable / disable** at any time:
   - **Left-click** the status bar item to disable it (asks for confirmation first).
-  - **Command Palette** → `Line Count: Enable` / `Disable`
+  - **Command Palette** → `Total Line Count: Enable` / `Disable`
 - **Remembers your choice** across restarts.
 
 When disabled, the status bar item is hidden completely. It can be re-enabled from the Command Palette or with a custom keyboard shortcut.
@@ -32,9 +32,9 @@ This extension does not contribute any VS Code settings.
 
 ## Available Keybindings
 
-- `line-count.toggle`
-- `line-count.enable`
-- `line-count.disable`
+- `total-line-count.toggle`
+- `total-line-count.enable`
+- `total-line-count.disable`
 
 ## Known Issues
 
