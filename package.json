@@ -2,8 +2,9 @@
   "name": "total-line-count",
   "displayName": "Total Line Count",
   "description": "Show active file line count and cursor location in the status bar.",
+  "icon": "icon.png",
   "publisher": "pauliusgin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "repository": {
     "type": "git",

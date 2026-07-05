@@ -42,6 +42,10 @@ This extension does not contribute any VS Code settings.
 
 ## Release Notes
 
+### 0.2.0
+
+- Added an extension icon.
+
 ### 0.1.0
 
 - Line count shown in the status bar next to the cursor position.
