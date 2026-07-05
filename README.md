@@ -20,7 +20,7 @@ Ln 25, Col 66, Total 100
   - **Command Palette** → `Line Count: Enable` / `Disable`
 - **Remembers your choice** across restarts.
 
-When disabled, the status bar item is hidden completely, so the only option to re-enable it is from the Command Palette.
+When disabled, the status bar item is hidden completely. It can be re-enabled from the Command Palette or with a custom keyboard shortcut.
 
 ## Requirements
 
